@@ -9,13 +9,12 @@ var started = false;
 var buttonColours = ["red", "blue", "green", "yellow"];
 
 $(document).on('touchstart' , function (event) {
-  if (event.key === "a") {
+ 
     if (!started) {
       $("#level-title").text("Level " + level);
       nextSequence();
       started = true;
     }
-  }
 });
 
 $(document).keydown(function (event) {
